@@ -11,3 +11,4 @@ FROM eclipse-temurin:17-jre-jammy
 WORKDIR $HOME
 COPY --from=maven_build /opt/app/target/hello-0.0.1-SNAPSHOT.jar /opt/app/hello-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java", "-jar", "/opt/app/hello-0.0.1-SNAPSHOT.jar" ]
+
